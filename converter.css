@@ -22,19 +22,21 @@ h1 {
 .converter {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-gap: 25px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 
 label {
     font-weight: bold;
     margin: 5px 0;
     color: #666; /* Slightly darker gray label text */
+    text-wrap: nowrap;
 }
 
 input {
