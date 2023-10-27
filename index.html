@@ -12,37 +12,39 @@
         <div class="converter">
             <div class="input-group">
                 <label for="liters">Liters</label>
-                <input type="number" id="liters">
+                <input type="number" id="liters" oninput="convertVolume('liters')" />
             </div>
             <div class="input-group">
                 <label for="milliliters">Milliliters</label>
-                <input type="number" id="milliliters">
+                <input type="number" id="milliliters" oninput="convertVolume('milliliters')" />
             </div>
             <div class="input-group">
                 <label for="cubicmeters">Cubic Meters</label>
-                <input type="number" id="cubicmeters">
+                <input type="number" id="cubicmeters" oninput="convertVolume('cubicmeters')" />
             </div>
             <div class="input-group">
                 <label for="cubiccentimeters">Cubic Centimeters</label>
-                <input type="number" id="cubiccentimeters">
+                <input type="number" id="cubiccentimeters" oninput="convertVolume('cubiccentimeters')" />
             </div>
             <div class="input-group">
-                <label for="fluidounces">Fluid Ounces</label>
-                <input type="number" id="fluidounces">
+                <label for="fluidounces">Fluid Ounces (US):</label>
+                <input type="number" id="fluidounces" oninput="convertVolume('fluidounces')" />            
             </div>
             <div class="input-group">
-                <label for="pints">Pints</label>
-                <input type="number" id="pints">
+                <label for="pints">Pints (US):</label>
+                <input type="number" id="pints" oninput="convertVolume('pints')" />         
             </div>
             <div class="input-group">
-                <label for="quarts">Quarts</label>
-                <input type="number" id="quarts">
+                <label for="quarts">Quarts (US):</label>
+                <input type="number" id="quarts" oninput="convertVolume('quarts')" />            
             </div>
             <div class="input-group">
-                <label for="gallons">Gallons</label>
-                <input type="number" id="gallons">
+                <label for="gallons">Gallons (US):</label>
+                <input type="number" id="gallons" oninput="convertVolume('gallons')" />
+            
             </div>
         </div>
     </div>
+    <script src="./converter.js"></script>
 </body>
 </html>
